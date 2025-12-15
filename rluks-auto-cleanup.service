@@ -1,0 +1,6 @@
+[Unit]
+Description=Automatic cleanup
+
+[Service]
+Type=oneshot
+ExecStart=/home/roman/Documents/GitHub/auto-cleanup/cleanup.sh
