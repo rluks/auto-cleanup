@@ -32,4 +32,7 @@ for mount_base in /media/$USER /mnt; do
     fi
 done
 
+echo "Pruning Obsidian backups (grandfather-father-son retention)..."
+"$(dirname "$0")/obsidian-backup-prune.sh"
+
 echo "Cleanup complete"

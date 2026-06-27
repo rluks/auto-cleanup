@@ -13,7 +13,7 @@ systemctl --user enable --now rluks-auto-cleanup.timer
 systemctl --user status rluks-auto-cleanup.timer
 
 ## View logs
-journalctl --user -u rluks-auto-cleanup.service -n 50
+journalctl --user -u rluks-auto-cleanup.service -n 10
 
 ## Manually test
 systemctl --user start rluks-auto-cleanup.service  
